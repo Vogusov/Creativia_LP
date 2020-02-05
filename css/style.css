@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.text_color--red {
+  color: #ff0033
+}
+
+.section_title {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: lowercase;
+}
+
+.section__description {
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0 115px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 50;
+
+}
+
+.nav {
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list__item {
+  list-style-type: none;
+  display: inline-block;
+  border-top: 3px solid #000;
+  border-bottom: 2px solid #000;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.nav__list__link {
+  text-decoration: none;
+  color: #999;
+  font-size: 18px;
+  line-height: 65px;
+}
+
+.nav__list__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__list__item:hover {
+  color: #fff;
+  border-top: 3px solid #ff0033;
+  border-bottom: 2px solid #ff0033;
+
+}
+
+.logo {
+  width: 251px;
+  height: 106px;
+  background-image: url("/img/logo.png");
+}
+
+/* end header */
+
+/* swiper slider */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.swiper-slide {
+  /* background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%; */
+}
+
+.slide-1 {
+  background: url(/img/slider_1.jpg) center no-repeat;
+}
+
+.slide-2 {
+  background: url(/img/slider_2.jpg) center no-repeat;
+}
+
+.slide-3 {
+  background: url(/img/slider_3.jpg) center no-repeat;
+}
+
+.swiper-button {
+  width: 28px;
+  height: 28px;
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.button-prev {
+  left: 2%
+}
+
+.button-next {
+  right: 2%
+}
+
+.arrow {
+  transition: fill 0.3s ease-in-out;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -moz-transition: fill 0.3s ease-in-out;
+  -ms-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+}
+
+.svg-nav:hover .arrow {
+  fill: #ff0033
+}
+
+.slider__button:active .arrow {
+  fill: #ff0033;
+  outline: none;
+}
+
+.slider__button:focus .arrow {
+  fill: #ff0033;
+  outline: none;
+}
+
+.slider-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(0, 0, 0);
+  opacity: 0.7
+}
+
+/* end awiper slider */
+
+
+/* slider content */
+.slider {
+  width: 100%;
+  height: 760px;
+  color: #fff;
+  position: relative;
+
+}
+
+.slider__title {
+  text-transform: lowercase;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.slider__button {
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  background-color: #000;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+}
+
+.slider__button:focus {
+  background-color: #ff0033;
+  outline: none;
+}
+
+.slider__button:hover {
+  background-color: #ff0033;
+}
+
+.slider__button:active {
+  background-color: #ff0033;
+  color: #999;
+}
+
+
+.slider__content {
+  width: 800px;
+  height: 240px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  /* z-index: 20; */
+  top: 30%;
+  margin: 0 auto;
+  
+  left: 0;
+  right: 0;
+}
+
+.slider__buttons {
+  width: 366px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* end slider content */
