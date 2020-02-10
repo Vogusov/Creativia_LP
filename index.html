@@ -16,16 +16,19 @@
 <body>
     <div class="container">
 
-        <section class="slider">
+        <section id="home" class="slider">
             <header class="header">
                 <div class="logo">
                 </div>
+                <div class="nav-burger">
+                    <span></span>
+                </div>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <a href="#" class="nav__list__link">
+                        <a href="#home" class="nav__list__link">
                             <li class="nav__list__item">home</li>
                         </a>
-                        <a href="#" class="nav__list__link">
+                        <a href="#about" class="nav__list__link">
                             <li class="nav__list__item">about us</li>
                         </a>
                         <a href="#" class="nav__list__link">
@@ -49,7 +52,7 @@
                     </ul>
                 </nav>
             </header>
-            
+
             <div id="swiper-container" class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -65,8 +68,8 @@
                                 dolores veritatis odio mollitia incidunt repudiandae sit cum!
                             </h3>
                             <div class="slider__buttons">
-                                <button class="button slider__button" autofocus/>features</button>
-                                <button class="button slider__button">free psd</button>
+                                <a href="#home" class="button slider__button" autofocus />features</a>
+                                <a href="#home" class="button slider__button">free psd</a>
                             </div>
                         </div>
                     </div>
@@ -82,8 +85,8 @@
                                 dolores veritatis odio mollitia incidunt repudiandae sit cum!
                             </h3>
                             <div class="slider__buttons">
-                                <button class="button slider__button" autofocus>features</button>
-                                <button class="button slider__button">free psd</button>
+                                <a href="#home" class="button slider__button" autofocus>features</a>
+                                <a href="#home" class="button slider__button">free psd</a>
                             </div>
                         </div>
                     </div>
@@ -99,8 +102,8 @@
                                 dolores veritatis odio mollitia incidunt repudiandae sit cum!
                             </h3>
                             <div class="slider__buttons">
-                                <button class="button slider__button swiper-no-swiping" autofocus>features</button>
-                                <button class="button slider__button swiper-no-swiping">free psd</button>
+                                <a href="#home" class="button slider__button swiper-no-swiping">features</a>
+                                <a href="#home" class="button slider__button swiper-no-swiping">free psd</a>
                             </div>
                         </div>
                     </div>
@@ -133,10 +136,53 @@
 
             </div>
         </section>
-    </div> 
+
+        <section id="about" class="about">
+            <h2 class="about__title section_title">about <span class="text_color--red">creativia</span></h2>
+            <h3 class="about__description section__description">
+                Lorem ipsum dolor sit, amet consectetur <span class="text_color--red">adipisicing elit</span>. Magni nam
+                esse, nisi suscipit, cumque sunt possimus reprehenderit mollitia, fugiat harum qui quia similique!
+            </h3>
+            <div class="about__main">
+                <div class="about__info">
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum
+                        asperiores error, totam adipisci quam dicta corporis magni libero illo vel soluta laboriosam
+                        praesentium facilis quia aut quaerat porro cupiditate maiores esse recusandae nesciunt minima.
+                    </p>
+                    <div class="about__spoilers spoilers">
+                        <details class="spoiler">
+                            <summary class="spoiler__summary">Hwo is creativia</summary>
+                            <p class="spoiler__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
+                                temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
+                                sapiente voluptatibus?
+                            </p>
+                        </details>
+                        <details class="spoiler">
+                            <summary class="spoiler__summary">Experiences</summary>
+                            <p class="spoiler__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
+                                temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
+                                sapiente voluptatibus?
+                            </p>
+                        </details>
+                        <details class="spoiler">
+                            <summary class="spoiler__summary">Learn more</summary>
+                            <p class="spoiler__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
+                                temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
+                                sapiente voluptatibus?
+                            </p>
+                        </details>
+                    </div>
+                </div>
+                <div class="about__pics"></div>
+            </div>
+        </section>
+    </div>
     <!--end container-->
-    
-    
+
+
 
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
