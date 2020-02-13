@@ -8,19 +8,51 @@
     <title>creativia</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="fonts/raleway/raleway.css">
     <link rel="stylesheet" href="fonts/lato/lato.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
 
         <section id="home" class="slider">
+            <div id="nav_hidden_pannel" class="nav_hidden_pannel invisible">
+                <nav  class="nav_hidden" >
+                    <ul class="nav__list">
+                        <a href="#home" class="nav__list__link">
+                            <li class="nav__list__item">home</li>
+                        </a>
+                        <a href="#about" class="nav__list__link">
+                            <li class="nav__list__item">about us</li>
+                        </a>
+                        <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">portfolio</li>
+                        </a>
+                    <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">clients</li>
+                        </a>
+                        <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">team </li>
+                        </a>
+                        <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">services </li>
+                        </a>
+                        <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">blog </li>
+                        </a>
+                        <a href="#" class="nav__list__link">
+                            <li class="nav__list__item">contact </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
             <header class="header">
-                <div class="logo">
+                <div id="logo" class="logo">
                 </div>
-                <div class="nav-burger">
+                
+                <div id="burger" class="nav-burger">
                     <span></span>
                 </div>
                 <nav class="nav">
@@ -145,30 +177,63 @@
             </h3>
             <div class="about__main">
                 <div class="about__info">
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum
+                    <p class="about__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum
                         asperiores error, totam adipisci quam dicta corporis magni libero illo vel soluta laboriosam
                         praesentium facilis quia aut quaerat porro cupiditate maiores esse recusandae nesciunt minima.
                     </p>
-                    <div class="about__spoilers spoilers">
+                    <div id="about__spoilers" class="about__spoilers spoilers">
                         <details class="spoiler">
-                            <summary class="spoiler__summary">Hwo is creativia</summary>
-                            <p class="spoiler__text">
+                            <summary class="spoiler__summary">
+                                <span class="spoiler__plus">
+                                    <svg class="plus" width="22px" height="22px">
+                                        <circle class="circ" cx="11" cy="11" r="10" fill="none" stroke="#505050"
+                                            stroke-width="1" />
+                                        <line class="hor" x1="5" y1="11" x2="17" y2="11" stroke='#505050'
+                                            stroke-width="1" />
+                                        <line class='vert' x1="11" y1="5" x2="11" y2="17" stroke='#505050'
+                                            stroke-width="1" />
+                                    </svg>
+                                </span>Hwo is creativia
+                            </summary>
+                            <p class="spoiler__text text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
                                 temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
                                 sapiente voluptatibus?
                             </p>
                         </details>
                         <details class="spoiler">
-                            <summary class="spoiler__summary">Experiences</summary>
-                            <p class="spoiler__text">
+                            <summary class="spoiler__summary">
+                                <span class="spoiler__plus">
+                                    <svg class="plus" width="22px" height="22px">
+                                        <circle class="circ" cx="11" cy="11" r="10" fill="none" stroke="#505050"
+                                            stroke-width="1" />
+                                        <line class="hor" x1="5" y1="11" x2="17" y2="11" stroke='#505050'
+                                            stroke-width="1" />
+                                        <line class='vert' x1="11" y1="5" x2="11" y2="17" stroke='#505050'
+                                            stroke-width="1" />
+                                    </svg>
+                                </span>Experiences
+                            </summary>
+                            <p class="spoiler__text text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
                                 temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
                                 sapiente voluptatibus?
                             </p>
                         </details>
                         <details class="spoiler">
-                            <summary class="spoiler__summary">Learn more</summary>
-                            <p class="spoiler__text">
+                            <summary class="spoiler__summary">
+                                <span class="spoiler__plus">
+                                    <svg class="plus" width="22px" height="22px">
+                                        <circle class="circ" cx="11" cy="11" r="10" fill="none" stroke="#505050"
+                                            stroke-width="1" />
+                                        <line class="hor" x1="5" y1="11" x2="17" y2="11" stroke='#505050'
+                                            stroke-width="1" />
+                                        <line class='vert' x1="11" y1="5" x2="11" y2="17" stroke='#505050'
+                                            stroke-width="1" />
+                                    </svg>
+                                </span>Learn more
+                            </summary>
+                            <p class="spoiler__text text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nesciunt placeat in
                                 temporibus iusto. Nostrum nulla accusantium voluptatem dignissimos. Nobis iure aliquam
                                 sapiente voluptatibus?
@@ -176,8 +241,64 @@
                         </details>
                     </div>
                 </div>
-                <div class="about__pics"></div>
+                <div class="about__pics">
+                    <div id="front-pic" class="about__pic about__pic-1 ">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 252">
+                            <defs>
+                                <pattern id="img1" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                    <image xlink:href="/img/about_1.jpg" width="100%"  />
+                                </pattern>
+                            </defs>
+                            <path fill="url(#img1)"  
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                            <path class="back-filter" fill="black"   
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                        </svg>
+                    </div>
+                    <div id="left-pic" class="about__pic about__pic-2 ">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 252">
+                            <defs>
+                                <pattern id="img2" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                    <image class="img" xlink:href="/img/about_2.jpg" width="100%" />
+                                </pattern>
+                            </defs>
+                            <path fill="url(#img2)"  
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                            <path class="back-filter" fill="black"   
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                        </svg>
+                    </div>
+                    <div id="right-pic" class="about__pic about__pic-3 ">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 252">
+                            <defs>
+                                <pattern id="img3" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                    <image xlink:href="/img/about_3.jpg" width="100%"/>
+                                </pattern>
+                            </defs>
+                            <path fill="url(#img3)"  
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                            <path class="back-filter" fill="black"   
+                                d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                        </svg>
+                    </div>
+                </div>                
             </div>
+            <div class="about__scroll-bar">
+                <div class="bar">
+                    <div class="handle">
+                        <svg width="21" viewBox="0 0 300 252">
+                            <path fill="red"  
+                               d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+
+            </div>
+
+
         </section>
     </div>
     <!--end container-->
@@ -187,41 +308,33 @@
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/js/main.js"></script>
 
     <script>
-        var mySwiper = new Swiper('#swiper-container', {
+        const mySwiper = new Swiper('#swiper-container', {
             init: true,
-            // Navigation arrows
             navigation: {
                 nextEl: '.button-next',
                 prevEl: '.button-prev',
             },
-
             noSwipingClass: 'swiper-no-swiping',
-
             initialSlide: 0,
             slidesPerView: 1,
             effect: 'coverflow',
             coverflowEffect: {
                 rotate: 45,
                 slideShadows: true,
-                // depth: 10,
-                // modifier: 7
             },
-            // parallax: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
             autoplay: false,
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: true,
-            // },
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
-
-
             speed: 1100,
             spaceBetween: 0
-        })
+        });
     </script>
 </body>
 
