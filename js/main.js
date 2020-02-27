@@ -1,7 +1,5 @@
 // /* spoilers about */
 let toggleSpoilerIcon = function(event) {
-  console.log(event.target);
-  console.log(event.currentTarget);
   let hor = event.currentTarget.querySelector('.hor');
   let vert = event.currentTarget.querySelector('.vert');
   let circ = event.currentTarget.querySelector('.circ');
@@ -17,9 +15,9 @@ let toggleSpoilerIcon = function(event) {
     circ.style.stroke="#ff0033";
     hor.style.stroke="#ff0033";
   }
-}
+};
 
-document.querySelectorAll('.spoiler').forEach((el) => el.addEventListener('click', toggleSpoilerIcon));
+document.querySelectorAll('.spoiler').forEach(el => el.addEventListener('click', toggleSpoilerIcon));
 
 
 
@@ -31,22 +29,32 @@ let burger = document.getElementById('burger');
 let toggleNav = function() {
   navHidden.classList.toggle('invisible');
   burger.classList.toggle('burger_active');
-}
+};
 
 document.querySelector('.nav-burger').addEventListener('click', toggleNav);
+
 
     // close hidden menu when wide screen
 let mediaQ = window.matchMedia("(max-width: 991px)");
 
-function myFunction(mediaQ) {
+function checkMediaQ(mediaQ) {
   if (!mediaQ.matches) { 
     if (!navHidden.classList.contains('invisible')) // If media query matches
-    toggleNav()
+    toggleNav();
    }
 }
 
-mediaQ.addListener(myFunction);
+mediaQ.addListener(checkMediaQ);
 
+
+  // close hidden menu when link clicked
+let navListLinks = document.querySelectorAll('.nav_hidden_pannel .nav__list__link');
+
+function hideNavHidden() {
+  toggleNav();
+}
+
+navListLinks.forEach(el => el.addEventListener('click',  hideNavHidden));
 
 
 
