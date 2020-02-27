@@ -36,6 +36,8 @@ let toggleNav = function() {
 document.querySelector('.nav-burger').addEventListener('click', toggleNav);
 
     // close hidden menu when wide screen
+let mediaQ = window.matchMedia("(max-width: 991px)");
+
 function myFunction(mediaQ) {
   if (!mediaQ.matches) { 
     if (!navHidden.classList.contains('invisible')) // If media query matches
@@ -43,7 +45,8 @@ function myFunction(mediaQ) {
    }
 }
 
-let mediaQ = window.matchMedia("(max-width: 991px)");
-myFunction(mediaQ) ;
-
 mediaQ.addListener(myFunction);
+
+
+
+

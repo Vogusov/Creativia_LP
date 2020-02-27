@@ -398,13 +398,13 @@ body {
 }
 
 .about__main {
+  min-height: 360px;
   display: flex;
 }
 
 .about__info {
   flex: 1;
   margin-right: 15px;
-  ;
 }
 
 .about__pics {
@@ -545,21 +545,31 @@ body {
   width: 426px;
 }
 
+.about__scroll-bar {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .bar {
   width: 500px;
   height: 1px;
   margin: 0 auto;
-  background-color: red;
+  background: #ff0033;
   position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
 }
 
-.handle {
+.bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
   width: 21px;
-  height: 21px;
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  margin-left: -8px;
+  height: 17.6px;
+  background: url('/svg/range.svg') no-repeat ;
+  cursor: pointer;
 }
 
 /* media queries */
@@ -586,6 +596,14 @@ body {
   } */
   .about__pic {
     width: 350px;
+  }
+
+  .about__main {
+    min-height: 310px;
+  }
+
+  .about__scroll-bar {
+    margin-top: 80px;
   }
 
   #front-pic {
@@ -677,6 +695,14 @@ body {
     width: 270px;
   }
 
+  .about__main {
+    min-height: 280px;
+  }
+
+  .about__scroll-bar {
+    margin-top: 80px;
+  }
+
   #front-pic {
     margin-left: -135px;
   }
@@ -761,6 +787,10 @@ body {
     font-size: 12px;
   }
 
+  .about__main {
+    min-height: 250px;
+  }
+
   .about__title {
     margin-bottom: 20px;
   }
@@ -772,6 +802,7 @@ body {
   .about__main {
     flex-direction: column;
   }
+
   .about__pics {
     margin: 0;
     min-height: 276px;
@@ -781,31 +812,33 @@ body {
     margin-right: 0px;
     margin-bottom: 15px;
   }
+}
 
-  @media(max-width: 767px) {
-    .container {
-      max-width: 540px;
-    }
-    .bar {
-      width: 300px
-    }
+@media(max-width: 767px) {
+  .container {
+    max-width: 540px;
   }
 
-  @media(max-width: 575px) {
-    .container {
-      max-width: 100%;
-    }
+  .bar {
+    width: 300px
+  }
+}
 
-    .bar {
-      width: 100px
-    }
-
-    .about__pics,
-    .about__scroll-bar {
-      display: none;
-    }
+@media(max-width: 575px) {
+  .container {
+    max-width: 100%;
   }
 
+  .bar {
+    width: 100px
+  }
+
+  .about__pics,
+  .about__scroll-bar {
+    display: none;
+  }
+}
 
 
-  /* end media queries */
+
+/* end media queries */
