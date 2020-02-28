@@ -58,3 +58,44 @@ navListLinks.forEach(el => el.addEventListener('click',  hideNavHidden));
 
 
 
+// portfolio 
+
+let portfolioPics = document.querySelectorAll('.portfolio__pic');
+console.log('portfolioPics: ', portfolioPics);
+
+let hoverBlack = `
+<div class="pic_hover">
+  <div class="pic_hover__content">
+    <div class="pic_plus">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="pic-plus" width="23"
+                                        viewBox="0 0 100 100">
+        <line class="pic-hor" x1="0" y1="50" x2="100" y2="50" stroke="#fff"
+                                            stroke-width="30" />
+        <line class="pic-vert" x1="50" y1="0" x2="50" y2="100" stroke="#fff"
+                                           stroke-width="30" />
+      </svg>
+    </div>
+    <span class="pic_name">disign name</span>
+  </div>
+</div>`
+
+// function showHoverBlack() {
+//   console.log('herer: ' + event.target);
+//   // event.target.insertAdjacentHTML('afterbegin' ,hoverBlack);
+
+  
+// }
+
+// portfolioPics.forEach(el => el.addEventListener('', showHoverBlack))
+
+portfolioPics.onmouseover = function(event) {
+  let target = event.target;
+  target.style.background = 'pink';
+  console.log('target.style: ', target.style);
+};
+
+portfolioPics.onmouseout = function(event) {
+  let target = event.target;
+  target.style.background = '';
+  console.log('target.style: ', target.style);
+};
