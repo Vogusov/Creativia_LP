@@ -60,11 +60,11 @@ navListLinks.forEach(el => el.addEventListener('click',  hideNavHidden));
 
 // portfolio 
 
-let portfolioPics = document.querySelectorAll('.portfolio__pic');
-console.log('portfolioPics: ', portfolioPics);
+let portfolioPicsWrapper = document.querySelector('.portfolio__pics__grid_wrapper');
+console.log('portfolioPics: ', portfolioPicsWrapper);
 
 let hoverBlack = `
-<div class="pic_hover">
+<div id="hover_black" class="pic_hover">
   <div class="pic_hover__content">
     <div class="pic_plus">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="pic-plus" width="23"
@@ -79,23 +79,19 @@ let hoverBlack = `
   </div>
 </div>`
 
-// function showHoverBlack() {
-//   console.log('herer: ' + event.target);
-//   // event.target.insertAdjacentHTML('afterbegin' ,hoverBlack);
-
-  
+// function showHoverBlack(target) {
+//   target.insertAdjacentHTML('afterbegin', hoverBlack);  
 // }
 
-// portfolioPics.forEach(el => el.addEventListener('', showHoverBlack))
+// // portfolioPics.forEach(el => el.addEventListener('', showHoverBlack))
 
-portfolioPics.onmouseover = function(event) {
-  let target = event.target;
-  target.style.background = 'pink';
-  console.log('target.style: ', target.style);
-};
+// portfolioPicsWrapper.onmouseover = function(event) {
+//   let target = event.target;
+//   showHoverBlack(target);
+// };
 
-portfolioPics.onmouseout = function(event) {
-  let target = event.target;
-  target.style.background = '';
-  console.log('target.style: ', target.style);
-};
+// portfolioPicsWrapper.onmouseout = function(event) {
+//   let target = event.target;
+//   target.style.background = '';
+//   console.log('target.style: ', target);
+// };
