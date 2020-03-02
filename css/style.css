@@ -1012,10 +1012,6 @@ li {
     margin-top: 25px;
   }
 
-  .portfolio__pic {
-    grid-column: 
-  }
-
   .portfolio__pics__grid_wrapper {
     grid-template-rows: repeat(2, 180px);
   }  
