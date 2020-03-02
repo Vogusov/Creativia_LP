@@ -179,7 +179,7 @@ li {
   content: "";
   visibility: hidden;
   width: 100%;
-  background-color: none;
+  background-color: transparent;
   position: absolute;
   left: 0;
 }
@@ -507,9 +507,6 @@ li {
   0% {
     color: white
   }
-
-  ;
-
   100% {
     color: initial
   }
